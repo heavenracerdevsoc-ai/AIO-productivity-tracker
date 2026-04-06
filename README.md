@@ -21,22 +21,6 @@ npm install
 npm run dev
 ```
 
-Pushing to GitHub
-
-You can create a new GitHub repository and push this project. Example using the GitHub CLI:
-
-```bash
-# from project root
-gh repo create YOUR_USERNAME/AIO-productivity-tracker --public --source=. --remote=origin --push
-```
-
-Or manually create an empty repo on GitHub and then run:
-
-```bash
-git remote add origin https://github.com/YOUR_USERNAME/AIO-productivity-tracker.git
-git branch -M main
-git push -u origin main
-```
 
 Notes
 
