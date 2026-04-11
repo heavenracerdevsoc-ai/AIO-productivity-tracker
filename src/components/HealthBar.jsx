@@ -3,14 +3,14 @@ import { useSelector, useDispatch } from "react-redux";
 import { setLevel } from "../redux/userSlice";
 
 const LEAGUES = [
-  { min: 100, src: "/assets/titan_league.png", name: "Titan", color: "#e8c84a" },
-  { min: 75,  src: "/assets/champion_league.png", name: "Champion", color: "#b87fe0" },
-  { min: 60,  src: "/assets/crystal_league.png", name: "Crystal", color: "#5ab8e0" },
-  { min: 50,  src: "/assets/master_league.png", name: "Master", color: "#e07a5a" },
-  { min: 20,  src: "/assets/gold_league.png", name: "Gold", color: "#c8a96e" },
-  { min: 10,  src: "/assets/silver_league.png", name: "Silver", color: "#aaaaaa" },
-  { min: 5,   src: "/assets/bronze_league.png", name: "Bronze", color: "#b87d5a" },
-  { min: 0,   src: "/assets/no_league.png", name: "Unranked", color: "#7a7570" },
+  { min: 100, src: "/titan_league.png", name: "Titan", color: "#e8c84a" },
+  { min: 75,  src: "/champion_league.png", name: "Champion", color: "#b87fe0" },
+  { min: 60,  src: "/crystal_league.png", name: "Crystal", color: "#5ab8e0" },
+  { min: 50,  src: "/master_league.png", name: "Master", color: "#e07a5a" },
+  { min: 20,  src: "/gold_league.png", name: "Gold", color: "#c8a96e" },
+  { min: 10,  src: "/silver_league.png", name: "Silver", color: "#aaaaaa" },
+  { min: 5,   src: "/bronze_league.png", name: "Bronze", color: "#b87d5a" },
+  { min: 0,   src: "/no_league.png", name: "Unranked", color: "#7a7570" },
 ];
 
 const getLeague = (level) => LEAGUES.find((l) => level >= l.min) || LEAGUES[LEAGUES.length - 1];
